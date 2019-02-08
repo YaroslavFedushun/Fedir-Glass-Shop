@@ -1,121 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Lvivski Smakolyky</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <!--bootstrap -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet">
-    <!--fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <!-- fonts -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--style -->
-    <script src="js/objects.js"></script>
-    <script src="js/router.js"></script>
-    <!--objects -->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <!--jquery -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
-    <!--Lodash-->
-    <script src="lib/slick/slick.js" type="text/javascript" charset="utf-8"></script> <!-- carousel  -->
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
-    <!-- carousel  -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
 <body>
-<div id="header"></div>
+<app-root></app-root>
 
-
-<div class="col-md-12">
-    <div class="menu-header" id="responsive-menu">
-        <nav class="menu-blocks">
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a   class="dropdown-toggle style-list cakeLink links" type="cake">ТОРТИ</a>
-                </li>
-                <li class="menu-item"><a  class="style-list strawberryLink links" type="straw"  >ПОЛУНИЦЯ В ШОКОЛАДІ </a></li>
-                <li class="menu-item"><a  class="style-list giftLink links" type="giftbox"  > ПОДАРУНКОВІ НАБОРИ
-                </a>
-                </li>
-                <li class="menu-item"><a  class="style-list capcakeLink links" type="capcake"  > Капкейки
-                </a>
-                </li>
-                <li class="menu-item"><a    class="style-list dessertLink links" type="desserts" >Десерти
-                </a>
-                </li>
-                <li class="menu-item"><a  class="style-list candybarLink links" type="candybar"  > CANDY BAR
-                </a>
-                </li>
-                <li class="menu-item"><a  class="style-list dishLink links" type="dishes"  > ОРЕНДА ПОСУДУ
-                </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
-<div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-                <form id="jquery_form2">
-                    <div class="form-style-5">
-                            <fieldset>
-                                <legend>Зворотрнній звязок</legend>
-                                <input type="text" name="subject1" id="backName" placeholder="Ваше Імя">
-                                <input type="tel" id="backTel" minlength="10" maxlength="13" name="field22" placeholder="Ваш номер">
-                                <a href="https://postmail.invotes.com" target="_blank">PostMail</a>
-                            </fieldset>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <input type="submit" name="send" id="callBack" class="btn btn-default" value="Відправити" />
-                <button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="basketBlock">
-
-    <button id="mainBasketButton" type="button" onclick="tmplbasket()"  class="btn btn-primary btn-lg " data-toggle="modal" data-target="#myModal">
-        <img class="contacts basket-button" src="images/basket.png" alt="basket"/>
-        <p class="length-basket"></p>
-    </button>
-
-</div>
-
-
-<div class="container" id="mainContainer">
-</div>
-
-
-<div id="footer"></div>
-<div id="basket"></div>
-
-
-<div id="templates-container"></div> <!--  here we imports all lodash templates -->
-<!--  Latest compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script> -->
-<script src="js/main.js"></script>
-<!--js-->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><!-- sweetalert -->
-</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjKCIlvjB6RCgHMvfMOaWwDYA-9XFoaPw">
+</script>
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>
